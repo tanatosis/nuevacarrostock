@@ -1,0 +1,75 @@
+[{
+        "id": "abrigo-01",
+        "titulo": "Nintendo 64",
+        "imagen": "./img/Consolas/nintendo64.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 35990
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "Super Nintendo",
+        "imagen": "./img/Consolas/supernintendo.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 55990
+    },
+
+    {
+        "id": "camiseta-01",
+        "titulo": "Velador 1998",
+        "imagen": "./img/Muebles/velador.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "camisetas"
+        },
+        "precio": 15990
+    },
+    {
+        "id": "camiseta-02",
+        "titulo": "Sillon 3 cuerpos",
+        "imagen": "./img/Muebles/sillon 2.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "camisetas"
+        },
+        "precio": 39990
+    },
+    {
+        "id": "camiseta-03",
+        "titulo": "Silla mecedora",
+        "imagen": "./img/Muebles/sillamecedora.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "camisetas"
+        },
+        "precio": 18990
+    },
+
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj de pared",
+        "imagen": "./img/Relojes/relojpared.png",
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 13990
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "Reloj de cuarzo",
+        "imagen": "././img/Relojes/reloj2.png",
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    }
+
+
+]

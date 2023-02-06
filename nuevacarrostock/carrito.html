@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachureros</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="./enviomensaje.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("j-rcBQvCWUvlx2ifE");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Cachureros</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Cachureros</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© Cachureros 2023</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Esto se va a completar con el JS -->
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total Neto:</p>
+                            <p id="neto"></p>
+                            <p>Iva(19%):</p>
+                            <p id="iva"></p>
+                            <p>Despacho(5%):</p>
+                            <p id="despacho"></p>
+                            <p>Total:</p>
+                            <p id="total"></p>
+                        </div>
+                        <!--<button id="carrito-acciones-comprar" class="carrito-acciones-comprar" onclick="pago()">Comprar ahora</button>-->
+                    </div>
+                </div>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled"></p>
+
+                <div class="container border mt-3 bg-light">
+                    <div class="row">
+
+                        <div class="col-md-6 border-left py-3">
+                            <h1 id="tituloDespacho">Datos de despacho</h1>
+
+                            <div class="form-group">
+                                <h5 for="direccion">Nombre</h5>
+                                <input type="text" class="form-control" id="name" placeholder="Ingresar Nombre y Apellido" />
+                            </div>
+                            <div class="form-group">
+                                <h5 for="direccion">Dirección</h5>
+                                <input type="text" class="form-control" id="direccion" placeholder="Ingresar dirección" />
+                            </div>
+                            <div class="form-group">
+                                <h5 for="direccion">Comuna</h5>
+                                <input type="text" class="form-control" id="comuna" placeholder="Ingresar comuna" />
+                            </div>
+
+                            <div class="form-group">
+                                <h5 for="direccion">Región</h5>
+                                <input type="text" class="form-control" id="region" placeholder="Ingresar region" />
+                            </div>
+
+                            <div class="form-group">
+                                <h5 for="email">Email</h5>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresar email" />
+                            </div>
+
+                            <div class="form-group">
+                                <h5 for="destinatario">Destinatario</h5>
+                                <input type="text" class="form-control" id="destinatario" placeholder="Ingresar destinatario" />
+                            </div>
+
+
+
+                            <button class="btn btn-dark" onclick="sendMail()">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                </p>
+
+            </div>
+
+            <!--- DATOS DE FORMULARIO DE DESPACHO --------->
+
+
+
+        </main>
+    </div>
+    <!-- revisar scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carrito.js"></script>
+
+</body>
+
+</html>
