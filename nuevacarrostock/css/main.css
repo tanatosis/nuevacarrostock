@@ -289,9 +289,7 @@ main {
 .carrito-producto-cantidad {
     display: grid;
 }
-.inputCantidad {
-    width: rem;
-}
+
 .header-mobile {
     display: none;
 }
