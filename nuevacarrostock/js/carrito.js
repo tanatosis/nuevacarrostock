@@ -76,7 +76,7 @@ function cargarProductosCarrito() {
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>Cantidad</small>
-                    <p>${producto.cantidad}</p>
+                    <input type="number" min="1" style="width : 4rem; heigth : 1rem" value="${producto.cantidad}"></input>
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
