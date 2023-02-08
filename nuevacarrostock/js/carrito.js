@@ -80,11 +80,11 @@ function cargarProductosCarrito() {
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
-                    <p>$${producto.precio}</p>
+                    <p>${formatPrecio(producto.precio)}</p>
                 </div>
                 <div class="carrito-producto-subtotal">
                     <small>Subtotal</small>
-                    <p>$${producto.precio * producto.cantidad}</p>
+                    <p>${formatPrecio(producto.precio * producto.cantidad)}</p>
                 </div>
                 <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
             `;
@@ -171,27 +171,27 @@ function vaciarCarrito() {
 
 function actualizarTotal() {
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
-    neto.innerText = `$${totalCalculado}`;
+    neto.innerText = `${formatPrecio(totalCalculado)}`;
 
     return totalCalculado
 }
 
 
 function actualizarIva() {
-    const ivaCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad) * 0.19, 0);
-    iva.innerText = `$${ivaCalculado}`;
+    let ivaCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad) * 0.19, 0);
+    iva.innerText = `${formatPrecio(Math.round(ivaCalculado))}`;
 
-    return ivaCalculado
+    return Math.round(ivaCalculado)
 }
 
 function actualizarDespacho() {
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     if (totalCalculado < 100000) {
-        despacho.innerText = `$${totalCalculado*0.05}`
+        despacho.innerText = `${formatPrecio(totalCalculado*0.05)}`
 
-    } else if (totalCalculado => 100000)
-        despacho.innerText = `0`;
-    return totalCalculado
+    } else if (totalCalculado >= 100000)
+        despacho.innerText = `$0`;
+    return Math.round(totalCalculado)
 
 }
 
@@ -199,7 +199,10 @@ const precioProducto = actualizarTotal()
 const precioIva = actualizarIva()
 const precioDespacho = actualizarDespacho()
 
-
+function formatPrecio(valor){
+    nuevoValor = new Intl.NumberFormat('es-CL', {style: 'currency', currency: 'CLP'}).format(valor);
+    return nuevoValor;
+}
 
 function totalProducto() {
 
@@ -207,11 +210,11 @@ function totalProducto() {
     var precioIva = actualizarIva()
     var precioDespacho = actualizarDespacho()
 
-    total.innerText = `$${precioProducto + precioIva + (precioDespacho*0.05)}`
-
-
-
-
+    if(precioProducto + precioIva < 100000){
+        total.innerText = `${formatPrecio(precioProducto + precioIva + Math.round(precioDespacho*0.05))}`
+    }else{
+        total.innerText = `${formatPrecio(precioProducto + precioIva)}`
+    }
 }
 
 
@@ -262,5 +265,4 @@ function sendMail() {
 
         })
         .catch(err => console.log(err));
-
 }
