@@ -42,9 +42,13 @@ function cargarProductosCarrito() {
                 <div class="carrito-producto-cantidad">
                 
                     <small>Cantidad</small>
+<<<<<<< HEAD
                    
                     <p><span class="restar">-</span>${producto.cantidad} <span class="sumar">+</span></p>
                    
+=======
+                    <input type="number" min="1" style="width : 4rem; heigth : 1rem" value="${producto.cantidad}"></input>
+>>>>>>> 731e5434c2835303c507591758e9a998a489f45d
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
@@ -236,13 +240,44 @@ function totalProducto() {
 
     total.innerText = `$${precioProducto + precioIva + (precioDespacho*0.05)}`
 
-
-
-
 }
 
 
-botonComprar.addEventListener("click", comprarCarrito);
+const nombreInput = document.querySelector('#name');
+const dirInput = document.querySelector('#direccion');
+const comunaInput = document.querySelector('#comuna');
+const regionInput = document.querySelector('#region');
+const emailInput = document.querySelector('#email');
+const destinatarioInput = document.querySelector('#destinatario');
+
+function verificarForm() {
+    if (productosEnCarrito.length === 0) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'El carrito esta vacio.',
+            timer: 1500,
+          })
+    } else {
+        if(nombreInput.value === '' || dirInput.value === '' || dirInput.value === '' || comunaInput.value === '' || regionInput.value === '' || emailInput.value === '' || destinatarioInput.value === '') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Faltan datos por completar.',
+                timer: 1500,
+              })
+        } else {
+            Swal.fire({
+                icon: 'success',
+                title: 'Tu compra ha sido confirmada.',
+                showConfirmButton: false,
+                timer: 1500
+              })
+            comprarCarrito();
+            sendMail();
+        }
+    };
+}
 
 function comprarCarrito() {
 
@@ -253,7 +288,6 @@ function comprarCarrito() {
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
-
 }
 //-----DATOS ENVIO MAIL CON DATOS DE DESPACHO -------------------
 function sendMail() {
@@ -285,7 +319,6 @@ function sendMail() {
                 document.querySelector("#carrito-productos").innerHTML = "";
             document.querySelector("#total").innerHTML = "";
             console.log(res);
-            alert("Mensaje enviado exitosamente!!")
 
         })
         .catch(err => console.log(err));
