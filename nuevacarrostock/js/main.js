@@ -15,6 +15,7 @@ let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
 
+
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
 }))
@@ -33,6 +34,7 @@ function cargarProductos(productosElegidos) {
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
+                
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
             </div>
         `;
@@ -41,6 +43,8 @@ function cargarProductos(productosElegidos) {
     })
 
     actualizarBotonesAgregar();
+
+
 }
 
 
@@ -83,6 +87,8 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
+
+
 
     Toastify({
         text: "Producto agregado",
