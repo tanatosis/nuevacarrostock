@@ -50,6 +50,10 @@ function cargarProductosCarrito() {
                     <small>Precio</small>
                     <p>$${producto.precio}</p>
                 </div>
+                <div class="carrito-producto-precio">
+                    <small id="stock">Stock</small>
+                    <p>${producto.stock}</p>
+                </div>
                 <div class="carrito-producto-subtotal">
                     <small>Subtotal</small>
                     <p>${formatPrecio(producto.precio * producto.cantidad)}</p>
