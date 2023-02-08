@@ -13,13 +13,8 @@ const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
 
 
-
-
-
 function cargarProductosCarrito() {
     if (productosEnCarrito && productosEnCarrito.length > 0) {
-
-
 
 
         contenedorCarritoVacio.classList.add("disabled");
