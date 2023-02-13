@@ -82,11 +82,6 @@ function cargarProductosCarrito() {
 
                 cargarProductosCarrito(); // vuelve a cargar los pruductos restado
 
-
-
-
-
-
             });
             let sumar = div.querySelector(".sumar"); // sumar del producto
             sumar.addEventListener("click", () => {
