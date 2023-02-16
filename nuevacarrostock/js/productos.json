@@ -1,0 +1,192 @@
+[{
+        "id": "abrigo-01",
+        "titulo": "Nintendo 64",
+        "imagen": "./img/Consolas/nintendo64.png",
+        "stock": 15,
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 35990
+
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "Super Nintendo",
+        "imagen": "./img/Consolas/supernintendo.png",
+        "stock": 7,
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 55990
+
+    },
+
+    {
+        "id": "camiseta-01",
+        "titulo": "TV 1983",
+        "imagen": "./img/Muebles/tv1.png",
+        "stock": 11,
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "camisetas"
+        },
+        "precio": 15990
+    },
+    {
+        "id": "camiseta-02",
+        "titulo": "TV 1979",
+        "imagen": "./img/Muebles/tv3.png",
+        "stock": 12,
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "camisetas"
+        },
+        "precio": 39990
+    },
+    {
+        "id": "abrigo-01",
+        "titulo": "Nintendo ",
+        "imagen": "./img/Consolas/nintendo1.png",
+        "stock": 15,
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 45990
+    },
+
+    {
+        "id": "pantalon-01",
+        "titulo": "Game boy color",
+        "imagen": "./img/Consolas/gameboy.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 19990
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "Reloj de cuarzo",
+        "imagen": "././img/Relojes/reloj2.png",
+        "stock": 16,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj de pared",
+        "imagen": "./img/Relojes/relojpared.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 13990
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Game Cube",
+        "imagen": "./img/Consolas/gamecube.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 13990
+    },
+
+    {
+        "id": "pantalon-01",
+        "titulo": "Neo geo",
+        "imagen": "./img/Consolas/neogeo.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "abrigos"
+        },
+        "precio": 24990
+    },
+
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj de piso",
+        "imagen": "./img/Relojes/relojpiso.png",
+        "stock": 9,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 33990
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj tallado de angeles",
+        "imagen": "./img/Relojes/relojangel.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 13990
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj de pared",
+        "imagen": "./img/Relojes/relojpared.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 13990
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj de pared",
+        "imagen": "./img/Relojes/relojpared.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 13990
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj de pared",
+        "imagen": "./img/Relojes/relojpared.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 13990
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "Reloj de pared",
+        "imagen": "./img/Relojes/relojpared.png",
+        "stock": 8,
+        "categoria": {
+            "nombre": "Relojes",
+            "id": "pantalones"
+        },
+        "precio": 13990
+    }
+
+
+
+
+
+
+
+
+
+]
