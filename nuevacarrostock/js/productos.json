@@ -135,58 +135,6 @@
             "id": "pantalones"
         },
         "precio": 13990
-    },
-    {
-        "id": "pantalon-01",
-        "titulo": "Reloj de pared",
-        "imagen": "./img/Relojes/relojpared.png",
-        "stock": 8,
-        "categoria": {
-            "nombre": "Relojes",
-            "id": "pantalones"
-        },
-        "precio": 13990
-    },
-    {
-        "id": "pantalon-01",
-        "titulo": "Reloj de pared",
-        "imagen": "./img/Relojes/relojpared.png",
-        "stock": 8,
-        "categoria": {
-            "nombre": "Relojes",
-            "id": "pantalones"
-        },
-        "precio": 13990
-    },
-    {
-        "id": "pantalon-01",
-        "titulo": "Reloj de pared",
-        "imagen": "./img/Relojes/relojpared.png",
-        "stock": 8,
-        "categoria": {
-            "nombre": "Relojes",
-            "id": "pantalones"
-        },
-        "precio": 13990
-    },
-    {
-        "id": "pantalon-01",
-        "titulo": "Reloj de pared",
-        "imagen": "./img/Relojes/relojpared.png",
-        "stock": 8,
-        "categoria": {
-            "nombre": "Relojes",
-            "id": "pantalones"
-        },
-        "precio": 13990
     }
-
-
-
-
-
-
-
-
 
 ]

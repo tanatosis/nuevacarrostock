@@ -198,3 +198,19 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+
+const botonCrearProducto = document.querySelector("#crear-producto");
+
+botonCrearProducto.addEventListener("click", () => {
+    const nuevoProducto = {
+        id: productos.length + 1,
+        categoria: "Consolas",
+        imagen: "img/producto4.jpg",
+        titulo: "Nuevo producto",
+        precio: 100,
+        detalles: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    };
+
+    productos.push(nuevoProducto);
+    cargarProductos(productos);
+});
