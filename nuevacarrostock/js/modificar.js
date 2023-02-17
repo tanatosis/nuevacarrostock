@@ -31,15 +31,19 @@ const modificarProducto = async(id) => {
         })
 }
 
-const modificar = async(id) => {
+// const modificar = async(id) => {
     
-        const respuesta = await fetch('https://bsite.net/metalflap/td-producto/idSucursal/9');
-        console.log(respuesta);
+//         const respuesta = await fetch('https://bsite.net/metalflap/td-producto/idSucursal/9');
+//         console.log(respuesta);
 
-        const datos = await respuesta.json();
+//         const datos = await respuesta.json();
 
-        let producto = '';
+//         let producto = '';
         
-        producto = datos.find(x => x.id === id);
+//         producto = datos.find(x => x.id === id);
 
+// }
+
+function modificar(){
+    window.location = 
 }

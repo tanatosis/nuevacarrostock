@@ -21,7 +21,7 @@ const cargarProductos = async() => {
                     </div>
 
                     <button class="producto-eliminar" id="eliminarProd" onclick="eliminarProducto(${producto.id})" style="margin: 30px;">eliminar</button>
-                    <button class="producto-modificar" id="modificarProd" onclick="modificar(${producto.id})"style="margin: 30px;">modificar</button>
+                    <button class="producto-modificar" id="modificarProd-${producto.id}" onclick="modificar(${producto.id})"style="margin: 30px;">modificar</button>
                 `;
 
         });
