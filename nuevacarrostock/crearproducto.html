@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -76,13 +77,50 @@
         </aside>
         <main>
             <h2 class="titulo-principal" id="titulo-principal">Crear productos </h2>
-            <div style="width: 30%;" id="contenedor-productos" class="contenedor-productos">
-                <!-- Esto se va a rellenar con JS -->
-            </div>
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="input-nombre">Nombre del producto</label>
+                        <input type="name" class="form-control" id="input-nombre" placeholder="Nombre del producto">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="input-precio">Precio</label>
+                        <input type="number" class="form-control" id="input-precio" placeholder="Precio">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="input-link">Link</label>
+                    <input type="text" class="form-control" id="input-link" placeholder="Imagen">
+                </div>
+                <div class="form-group">
+                    <label for="input-descripcion">Descripción</label>
+                    <input type="text" class="form-control" id="input-descripcion" placeholder="Cantidad de stock">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="input-etiqueta">Etiqueta</label>
+                        <input type="text" class="form-control" id="input-etiqueta">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="input-stock">Stock</label>
+                        <input type="number" class="form-control" id="input-stock">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="input-id-categoria">Id Categoria</label>
+                        <input type="number" class="form-control" id="input-id-categoria">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                </div>
+                <button type="button" class="btn btn-dark" id="crear-producto" onclick="cargarprod()">Crear</button>
+            </form>
         </main>
     </div>
 
-    <script src=""></script>
+    <script src="./js/crear.js"></script>
 
 </body>
 

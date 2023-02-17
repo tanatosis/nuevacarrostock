@@ -13,14 +13,15 @@ const cargarProductos = async() => {
             productos +=
                 `
                     <img class="producto-imagen" src="${producto.link}">
-                    <div class="producto-detalles">
+                    <div class="producto-detalles" style="margin: 30px;">
                         <h3 class="producto-titulo">${producto.nombre}</h3>
-                        <p class="producto-precio">$${producto.precio}</p>
-                        <p>Stock: ${producto.stock}</p>
+                        <hr><p class="producto-precio">$${producto.precio}</p>
+                        <hr><p>Stock: ${producto.stock}</p>
+                        <hr><p> ${producto.descripcion}</p>
                     </div>
 
-                    <button class="producto-eliminar" id="eliminarProd" onclick="eliminarProducto(${producto.id})">eliminar</button>
-                    <button class="producto-modificar" id="modificarProd" onclick="modificar(${producto.id})">modificar</button>
+                    <button class="producto-eliminar" id="eliminarProd" onclick="eliminarProducto(${producto.id})" style="margin: 30px;">eliminar</button>
+                    <button class="producto-modificar" id="modificarProd" onclick="modificar(${producto.id})"style="margin: 30px;">modificar</button>
                 `;
 
         });
@@ -41,33 +42,8 @@ const eliminarProducto = async(id) => {
     } catch (error) {
         console.log(error);
     }
-}
 
-const modificarProducto = async(id) => {
-        let producto = {
-            id: id,
-            nombre: ,
-            precio: ,
-            link: ,
-            stock: ,
-            etiqueta: ,
-            descripcion: "-",
-            idCategoria: ,
-            idSucursal: 9,
-        }
-
-        console.log(JSON.stringify(producto));
-
-        await fetch('https://bsite.net/metalflap/td-producto',
-        {method: 'PUT', 
-        body: JSON.stringify(producto),
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
-        })
-}
-
-modificar(id){
-    window.location.href("../modificarproducto.html")
-    var 
+    window.location.reload();
 }
 
 cargarProductos();
